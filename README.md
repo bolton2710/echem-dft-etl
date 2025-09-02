@@ -1,4 +1,4 @@
-# Demo of ETL workflow using Airflow for electrochemical oxide materials
+# Demo of ETL workflow for investigating electrochemical oxide materials
 
 ## 1. Walkthrough (5 minutes read)
 
