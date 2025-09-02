@@ -71,7 +71,7 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 docker compose up --build -d
 ```
 This build the Docker images and compose the container at the same time, took me about 5-10 minutes.
-The build written in [Dockfile](./Dockerfile) use the Airflow-base image, and adding the JDFTx compilation.
+The build written in [Dockerfile](./Dockerfile) use the Airflow-base image, and adding the JDFTx compilation.
 The [docker-compose](./docker-compose.yaml) instructions follow Airflow's template, with addition of a second postgres (my_postgres) for specific ETL purposes.
 
 4. Open `http://localhost:8080/` in your browser, where Airflow GUI and control reside.
@@ -82,11 +82,11 @@ The [docker-compose](./docker-compose.yaml) instructions follow Airflow's templa
 
 7. Once the DAG run completed, output files are mounted locally to `./output/`.
 
-8. Shutdown container for the day:
+8. Shutdown the container for the day:
 ```
 docker compose down
 ```
-Or clean up (reclaim spaces and memory) all container and images:
+Or clean up (reclaim spaces and memory) all containers and images:
 ```
 docker system prune
 ```
