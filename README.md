@@ -4,13 +4,13 @@
 
 ### A. Intro
 Electrodes are the building blocks for battery and electrocatalysis applications.
-Among electrode materials, oxides are commonly encountered in water electrolysis for green H$_2$ production (e.g., Iridium/Nickel oxides).
+Among electrode materials, oxides are commonly encountered in water electrolysis for green $H_2$ production (e.g., Iridium/Nickel oxides).
 Because oxide materials are vast and electrochemical experiments are time-consuming,
 computational screening of oxide electrodes is among the cutting-edge ideas.
 This demo illustrates a workflow that screens vanadium oxides for electrochemical properties.
 
 ### B. ETL workflow orchestration
-This workflow---broadly classified as Extract-Transform-Load (ETL)---comprises of six steps:
+This workflow—broadly classified as Extract-Transform-Load (ETL)—comprises of six steps:
 1. Search for bulk vanadium oxides from the [Material Projects](https://next-gen.materialsproject.org/) using its [MP-API](https://next-gen.materialsproject.org/api).
 2. Generate surfaces with different facets and termination  using [pymatgen](https://pymatgen.org/).
 3. Run electrochemical grand-canonical DFT (GC-DFT) using [JDFTx](https://jdftx.org).
@@ -48,14 +48,40 @@ The excess charges versus potentials should yield a linear line, of which the sl
 
 ![Example of report](./output/visualize/mp-755394-111-3.png)
 
-My work has shown the PZC and capacitance to be descriptors for the kinetics of adsorption and catalytic reaction.
+My work showed the PZC and capacitance to be important descriptors for the of adsorption thermodynamics and catalytic reaction kinetics.
 \[[1](https://www.nature.com/articles/s42004-025-01579-y),
-[2](https://pubs.rsc.org/en/content/articlehtml/2025/sc/d5sc03757c)\]
+[2](https://pubs.rsc.org/en/content/articlehtml/2025/sc/d5sc03757c),
+[3](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.4c01457),
+[4](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.4c01032)\]
 
 ## 2. Reproduce (1-2 hours)
 
-*Requirements: Docker*
+*Requirements*: [Docker](https://docs.docker.com/get-started/get-docker/)
 
-https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+1. Download this repository: 
 
-    echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+git clone https://github.com/bolton2710/echem-dft-etl.git
+```
+
+2. Following this official [Airflow guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html),
+initialize a unique Airflow ID: 
+```
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+
+3. Using [Docker CLI](https://docs.docker.com/reference/cli/docker/): 
+```
+docker compose up --build -d
+```
+This build the Docker images and compose the container at the same time, took me about 5-10 minutes.
+The build written in [Dockfile](./Dockerfile) use the Airflow-base image, and adding the JDFTx compilation.
+The [docker-compose](./docker-compose.yaml) instructions follow Airflow's template, with addition of a second postgres (my_postgres) for specific ETL purposes.
+
+4. Open `http://localhost:8080/` in your browser, where Airflow GUI and control reside.
+
+5. Navigate Airflow GUI menu to `Dags`. Here you'll see `dev-only` which I used for unit testing individual tasks. To fully reproduce the whole ETL workflow, go to `my-DAG`. 
+
+6. This DAG does not have a set schedule for demo purposes. To run, click `Trigger`. *Warning*: the bottle-neck computation is the GC-DFT task, which could take up to two hours for certain samples.
+
+7. Once the DAG run completed, output files are mounted locally to `./output/`.
