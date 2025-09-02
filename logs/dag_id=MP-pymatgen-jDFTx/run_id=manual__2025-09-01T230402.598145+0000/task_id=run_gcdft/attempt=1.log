@@ -1,0 +1,321 @@
+{"timestamp":"2025-09-01T23:04:35.395621","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-01T23:04:35.396258","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/my_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-01T23:04:42.255664Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.256375Z","level":"info","event":"*************** JDFTx 1.7.0  ***************","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.258181Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.271838Z","level":"info","event":"Start date and time: Mon Sep  1 23:04:42 2025","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.274384Z","level":"info","event":"Executable jdftx with command-line: -i /opt/airflow/output/gc_dft/mp-1393040-111-1_-0.1.in","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.276791Z","level":"info","event":"Running on hosts (process indices):  41a82e7e5a55 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.277397Z","level":"info","event":"Divided in process groups (process indices):  0 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.277820Z","level":"info","event":"Resource initialization completed at t[s]:      0.00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.278280Z","level":"info","event":"Run totals: 1 processes, 8 threads, 0 GPUs","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.278669Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.279236Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.280734Z","level":"info","event":"Input parsed successfully to the following command list (including defaults):","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.281224Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.281690Z","level":"info","event":"basis kpoint-dependent","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.282082Z","level":"info","event":"coords-type Cartesian","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.282799Z","level":"info","event":"core-overlap-check vector","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.283310Z","level":"info","event":"coulomb-interaction Periodic","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.283898Z","level":"info","event":"davidson-band-ratio 1.1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.284302Z","level":"info","event":"dump End State","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.284761Z","level":"info","event":"dump-name $VAR","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.285158Z","level":"info","event":"elec-cutoff 10","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.285601Z","level":"info","event":"elec-eigen-algo Davidson","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.286030Z","level":"info","event":"elec-ex-corr gga-PBE","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.287010Z","level":"info","event":"elec-initial-charge -0.100000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.288363Z","level":"info","event":"elec-smearing Fermi 0.00734","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.288917Z","level":"info","event":"electronic-minimize  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.289393Z","level":"info","event":"\tdirUpdateScheme      FletcherReeves \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.289869Z","level":"info","event":"\tlinminMethod         DirUpdateRecommended \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.290256Z","level":"info","event":"\tnIterations          30 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.290728Z","level":"info","event":"\thistory              15 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.291105Z","level":"info","event":"\tknormThreshold       0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.291531Z","level":"info","event":"\tmaxThreshold         no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.291893Z","level":"info","event":"\tenergyDiffThreshold  1e-05 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.295717Z","level":"info","event":"\tnEnergyDiff          2 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.296352Z","level":"info","event":"\tconvergeAll          no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.296861Z","level":"info","event":"\talphaTstart          1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.297578Z","level":"info","event":"\talphaTmin            1e-10 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.298072Z","level":"info","event":"\tupdateTestStepSize   yes \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.298573Z","level":"info","event":"\talphaTreduceFactor   0.1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.299050Z","level":"info","event":"\talphaTincreaseFactor 3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.299478Z","level":"info","event":"\tnAlphaAdjustMax      3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.299896Z","level":"info","event":"\twolfeEnergy          0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.300291Z","level":"info","event":"\twolfeGradient        0.9 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.300776Z","level":"info","event":"\tabortOnFailedStep    no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.301616Z","level":"info","event":"\tfdTest               no","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.302312Z","level":"info","event":"exchange-regularization WignerSeitzTruncated","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.302918Z","level":"info","event":"fluid LinearPCM 298.000000 1.013250","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.303481Z","level":"info","event":"fluid-anion F- 1 MeanFieldLJ \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.304001Z","level":"info","event":"\tepsBulk 1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.304903Z","level":"info","event":"\tpMol 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.305503Z","level":"info","event":"\tepsInf 1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.305953Z","level":"info","event":"\tPvap 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.306367Z","level":"info","event":"\tsigmaBulk 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.306722Z","level":"info","event":"\tRvdw 2.24877 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.306982Z","level":"info","event":"\tRes 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.308200Z","level":"info","event":"\ttauNuc 343133","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.308883Z","level":"info","event":"fluid-cation Na+ 1 MeanFieldLJ \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.309386Z","level":"info","event":"\tepsBulk 1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.309806Z","level":"info","event":"\tpMol 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.315579Z","level":"info","event":"\tepsInf 1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.316092Z","level":"info","event":"\tPvap 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.317351Z","level":"info","event":"\tsigmaBulk 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.317738Z","level":"info","event":"\tRvdw 2.19208 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.318008Z","level":"info","event":"\tRes 0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.318354Z","level":"info","event":"\ttauNuc 343133","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.318798Z","level":"info","event":"fluid-ex-corr lda-TF lda-PZ","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.319285Z","level":"info","event":"fluid-gummel-loop 10 1.000000e-05","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.319685Z","level":"info","event":"fluid-minimize  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.320122Z","level":"info","event":"\tdirUpdateScheme      PolakRibiere \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.320776Z","level":"info","event":"\tlinminMethod         DirUpdateRecommended \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.321328Z","level":"info","event":"\tnIterations          400 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.321659Z","level":"info","event":"\thistory              15 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.322134Z","level":"info","event":"\tknormThreshold       1e-11 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.322480Z","level":"info","event":"\tmaxThreshold         no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.322711Z","level":"info","event":"\tenergyDiffThreshold  0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.323067Z","level":"info","event":"\tnEnergyDiff          2 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.323302Z","level":"info","event":"\tconvergeAll          no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.323569Z","level":"info","event":"\talphaTstart          1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.323766Z","level":"info","event":"\talphaTmin            1e-10 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.324039Z","level":"info","event":"\tupdateTestStepSize   yes \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.324206Z","level":"info","event":"\talphaTreduceFactor   0.1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.326184Z","level":"info","event":"\talphaTincreaseFactor 3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.326543Z","level":"info","event":"\tnAlphaAdjustMax      6 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.327164Z","level":"info","event":"\twolfeEnergy          0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.327546Z","level":"info","event":"\twolfeGradient        0.9 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.327879Z","level":"info","event":"\tabortOnFailedStep    no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.329272Z","level":"info","event":"\tfdTest               no","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.329625Z","level":"info","event":"fluid-solvent H2O 55.338 ScalarEOS \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.329850Z","level":"info","event":"\tepsBulk 78.4 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.330169Z","level":"info","event":"\tpMol 0.92466 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.330375Z","level":"info","event":"\tepsInf 1.77 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.330581Z","level":"info","event":"\tPvap 1.06736e-10 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.330783Z","level":"info","event":"\tsigmaBulk 4.62e-05 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.330987Z","level":"info","event":"\tRvdw 2.61727 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.331174Z","level":"info","event":"\tRes 1.42 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.331373Z","level":"info","event":"\ttauNuc 343133 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.331581Z","level":"info","event":"\tpoleEl 15 7 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.331824Z","level":"info","event":"forces-output-coords Positions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.332009Z","level":"info","event":"initial-state $VAR","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.332200Z","level":"info","event":"ion V   0.000000000000000   9.808292000000002  18.232294000000000 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.332367Z","level":"info","event":"ion V   0.000000000000000   0.000000000000000  23.842230000000004 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.332554Z","level":"info","event":"ion V   0.000000000000000   9.808292000000002  23.842230000000001 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.332742Z","level":"info","event":"ion V   0.000000000000000   0.000000000000000  29.452167000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.333084Z","level":"info","event":"ion V   0.000000000000000   9.808292000000002  29.452167000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.333246Z","level":"info","event":"ion V   0.000000000000000   0.000000000000000  35.062103999999998 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.333438Z","level":"info","event":"ion V   0.000000000000000   9.808292000000002  35.062103999999998 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.333630Z","level":"info","event":"ion V   0.000000000000000   0.000000000000000  40.672040000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.333796Z","level":"info","event":"ion O   3.238900000000000  11.598168000000001  12.622354000000001 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.336081Z","level":"info","event":"ion O   3.238900000000000  17.826708000000000  12.622354000000001 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.336530Z","level":"info","event":"ion O   1.619447000000000   8.018416000000002  15.427327999999999 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.337006Z","level":"info","event":"ion O   1.619447000000000   1.789876000000000  21.037265000000005 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.337308Z","level":"info","event":"ion O   3.238900000000000  11.598168000000001  18.232290000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.337676Z","level":"info","event":"ion O   3.238900000000000  17.826708000000000  18.232290000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.337893Z","level":"info","event":"ion O   1.619447000000000   8.018416000000002  21.037265000000005 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.338102Z","level":"info","event":"ion O   1.619447000000000   1.789876000000000  26.647200999999999 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.338308Z","level":"info","event":"ion O   3.238900000000000  11.598168000000001  23.842227000000005 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.338509Z","level":"info","event":"ion O   3.238900000000000  17.826708000000000  23.842227000000008 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.338717Z","level":"info","event":"ion O   1.619447000000000   8.018416000000002  26.647200999999999 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.338939Z","level":"info","event":"ion O   1.619447000000000   1.789876000000000  32.257137999999998 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.339169Z","level":"info","event":"ion O   3.238900000000000  11.598168000000001  29.452164000000000 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.339450Z","level":"info","event":"ion O   3.238900000000000  17.826708000000000  29.452164000000003 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.339719Z","level":"info","event":"ion O   1.619447000000000   8.018416000000002  32.257137999999998 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.340020Z","level":"info","event":"ion O   1.619447000000000   1.789876000000000  37.867074000000002 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.340275Z","level":"info","event":"ion-species GBRV/$ID_pbe.uspp","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.340499Z","level":"info","event":"ion-width Ecut","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.340751Z","level":"info","event":"ionic-minimize  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.340970Z","level":"info","event":"\tdirUpdateScheme      L-BFGS \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.341204Z","level":"info","event":"\tlinminMethod         DirUpdateRecommended \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.341427Z","level":"info","event":"\tnIterations          0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.341810Z","level":"info","event":"\thistory              15 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.347558Z","level":"info","event":"\tknormThreshold       0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.348248Z","level":"info","event":"\tmaxThreshold         no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.348467Z","level":"info","event":"\tenergyDiffThreshold  1e-06 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.351705Z","level":"info","event":"\tnEnergyDiff          2 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.352164Z","level":"info","event":"\tconvergeAll          no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.352534Z","level":"info","event":"\talphaTstart          1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.352923Z","level":"info","event":"\talphaTmin            1e-10 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.353299Z","level":"info","event":"\tupdateTestStepSize   yes \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.353612Z","level":"info","event":"\talphaTreduceFactor   0.1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.353966Z","level":"info","event":"\talphaTincreaseFactor 3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.355543Z","level":"info","event":"\tnAlphaAdjustMax      3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.356132Z","level":"info","event":"\twolfeEnergy          0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.358671Z","level":"info","event":"\twolfeGradient        0.9 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.359158Z","level":"info","event":"\tabortOnFailedStep    no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.360038Z","level":"info","event":"\tfdTest               no","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.360540Z","level":"info","event":"kpoint   0.500000000000   0.500000000000   0.500000000000  1.00000000000000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.360870Z","level":"info","event":"kpoint-folding 1 1 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.361606Z","level":"info","event":"latt-move-scale 1 1 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.363874Z","level":"info","event":"latt-scale 1 1 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.364689Z","level":"info","event":"lattice  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.365062Z","level":"info","event":"\t   4.858347000000000    0.000000000000000    0.000000000000000  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.365491Z","level":"info","event":"\t   0.000000000000000   19.616584000000000    0.000000000000000  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.367239Z","level":"info","event":"\t  -8.414906000000000   -5.609937000000000   61.709302000000001","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.367662Z","level":"info","event":"lattice-minimize  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.368285Z","level":"info","event":"\tdirUpdateScheme      L-BFGS \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.368666Z","level":"info","event":"\tlinminMethod         DirUpdateRecommended \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.375572Z","level":"info","event":"\tnIterations          0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.379847Z","level":"info","event":"\thistory              15 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.380443Z","level":"info","event":"\tknormThreshold       0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.382002Z","level":"info","event":"\tmaxThreshold         no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.382295Z","level":"info","event":"\tenergyDiffThreshold  1e-06 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.387591Z","level":"info","event":"\tnEnergyDiff          2 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.395309Z","level":"info","event":"\tconvergeAll          no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.395850Z","level":"info","event":"\talphaTstart          1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.403573Z","level":"info","event":"\talphaTmin            1e-10 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.461166Z","level":"info","event":"\tupdateTestStepSize   yes \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.470746Z","level":"info","event":"\talphaTreduceFactor   0.1 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.475088Z","level":"info","event":"\talphaTincreaseFactor 3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.476767Z","level":"info","event":"\tnAlphaAdjustMax      3 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.480571Z","level":"info","event":"\twolfeEnergy          0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.485375Z","level":"info","event":"\twolfeGradient        0.9 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.498570Z","level":"info","event":"\tabortOnFailedStep    no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.499060Z","level":"info","event":"\tfdTest               no","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.499609Z","level":"info","event":"lcao-params 15 5e-05 0.00734","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.503196Z","level":"info","event":"pcm-variant CANDLE","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.504485Z","level":"info","event":"perturb-minimize  \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.504921Z","level":"info","event":"\tnIterations            0 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.505442Z","level":"info","event":"\talgorithm              MINRES \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.506204Z","level":"info","event":"\tresidualTol            0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.509182Z","level":"info","event":"\tresidualDiffThreshold  0.0001 \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.510571Z","level":"info","event":"\tCGBypass               no \\","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.515323Z","level":"info","event":"\trecomputeResidual      no","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.516062Z","level":"info","event":"spintype no-spin","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.516493Z","level":"info","event":"subspace-rotation-factor 1 yes","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.517870Z","level":"info","event":"symmetries automatic","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.518940Z","level":"info","event":"symmetry-threshold 0.0001","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.519289Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.519606Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.520123Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.525185Z","level":"info","event":"---------- Setting up symmetries ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.525629Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.526127Z","level":"info","event":"Non-trivial transmission matrix:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.526471Z","level":"info","event":"[   1   0   5  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.527033Z","level":"info","event":"[   0   1   0  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.527900Z","level":"info","event":"[   0   0   1  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.528294Z","level":"info","event":"with reduced lattice vectors:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.528729Z","level":"info","event":"[      4.858347      0.000000     24.291735  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.528979Z","level":"info","event":"[      0.000000     19.616584      0.000000  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.529394Z","level":"info","event":"[     -8.414906     -5.609937     19.634772  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.531311Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.531867Z","level":"info","event":"Found 4 point-group symmetries of the bravais lattice","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.536174Z","level":"info","event":"Found 2 space-group symmetries with basis","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:42.537024Z","level":"info","event":"Applied RMS atom displacement 4.06845e-07 bohrs to make symmetries exact.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.061812Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.062306Z","level":"info","event":"---------- Initializing the Grid ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.062757Z","level":"info","event":"R =","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.063267Z","level":"info","event":"[      4.85835            0            0  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.065397Z","level":"info","event":"[            0      19.6166            0  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.066286Z","level":"info","event":"[     -8.41491     -5.60994      61.7093  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.067066Z","level":"info","event":"unit cell volume = 5881.15","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.067466Z","level":"info","event":"G =","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.068028Z","level":"info","event":"[    1.29328         -0          0  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.068378Z","level":"info","event":"[         -0     0.3203          0  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.068755Z","level":"info","event":"[   0.176356  0.0291182   0.101819  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.069070Z","level":"info","event":"Minimum fftbox size, Smin = [  28  60  176  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.069511Z","level":"info","event":"WARNING: Symmetries require anisotropic S to include FFT-unsupported factors. Falling back to isotropic solution.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.069828Z","level":"info","event":"Chosen fftbox size, S = [  180  180  180  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.071727Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.072367Z","level":"info","event":"---------- Exchange Correlation functional ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.072813Z","level":"info","event":"Initalized PBE GGA exchange.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.073390Z","level":"info","event":"Initalized PBE GGA correlation.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.073889Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.074286Z","level":"info","event":"---------- Setting up pseudopotentials ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.074687Z","level":"info","event":"Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0.561985","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.075066Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.075426Z","level":"info","event":"Reading pseudopotential file '/opt/jdftx-master/build/pseudopotentials/GBRV/v_pbe.uspp':","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.075766Z","level":"info","event":"  Title: V.  Created by USPP 7.3.6 on 31-3-15","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.079931Z","level":"info","event":"  Reference state energy: -72.228583.  13 valence electrons in orbitals:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.080487Z","level":"info","event":"    |300>  occupation: 2  eigenvalue: -2.581040","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.080870Z","level":"info","event":"    |310>  occupation: 6  eigenvalue: -1.618497","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.081199Z","level":"info","event":"    |400>  occupation: 2  eigenvalue: -0.172800","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.081604Z","level":"info","event":"    |320>  occupation: 3  eigenvalue: -0.189802","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.081950Z","level":"info","event":"  lMax: 2  lLocal: 3  QijEcut: 6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.082297Z","level":"info","event":"  6 projectors sampled on a log grid with 593 points:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.082663Z","level":"info","event":"    l: 0  eig: -2.581041  rCut: 1.5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.083048Z","level":"info","event":"    l: 0  eig: -0.172801  rCut: 1.5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.083473Z","level":"info","event":"    l: 1  eig: -1.618497  rCut: 1.6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.084406Z","level":"info","event":"    l: 1  eig: 0.150000  rCut: 1.6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.084771Z","level":"info","event":"    l: 2  eig: -0.189802  rCut: 1.7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.085233Z","level":"info","event":"    l: 2  eig: 0.150000  rCut: 1.7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.085711Z","level":"info","event":"  Partial core density with radius 0.8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.086035Z","level":"info","event":"  Transforming core density to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.086389Z","level":"info","event":"  Transforming local potential to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.086764Z","level":"info","event":"  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 307 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.088563Z","level":"info","event":"  Transforming density augmentations to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:44.089835Z","level":"info","event":"  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 307 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.047533Z","level":"info","event":"  Core radius for overlap checks: 1.80 bohrs.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.049260Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.050055Z","level":"info","event":"Reading pseudopotential file '/opt/jdftx-master/build/pseudopotentials/GBRV/o_pbe.uspp':","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.051246Z","level":"info","event":"  Title: O.  Created by USPP 7.3.6 on 3-2-2014","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.051881Z","level":"info","event":"  Reference state energy: -15.894388.  6 valence electrons in orbitals:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.053343Z","level":"info","event":"    |200>  occupation: 2  eigenvalue: -0.878823","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.053754Z","level":"info","event":"    |210>  occupation: 4  eigenvalue: -0.332131","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.054159Z","level":"info","event":"  lMax: 2  lLocal: 2  QijEcut: 6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.054602Z","level":"info","event":"  5 projectors sampled on a log grid with 511 points:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.054933Z","level":"info","event":"    l: 0  eig: -0.878823  rCut: 1.25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.055209Z","level":"info","event":"    l: 0  eig: 0.000000  rCut: 1.25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.057579Z","level":"info","event":"    l: 1  eig: -0.332132  rCut: 1.25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.058146Z","level":"info","event":"    l: 1  eig: 0.000000  rCut: 1.25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.058614Z","level":"info","event":"    l: 2  eig: 1.000000  rCut: 1.25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.060043Z","level":"info","event":"  Partial core density with radius 0.7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.060435Z","level":"info","event":"  Transforming core density to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.060754Z","level":"info","event":"  Transforming local potential to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.061086Z","level":"info","event":"  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 307 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.061473Z","level":"info","event":"  Transforming density augmentations to a uniform radial grid of dG=0.02 with 6819 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:45.061824Z","level":"info","event":"  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 307 points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.092551Z","level":"info","event":"  Core radius for overlap checks: 1.25 bohrs.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.093088Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.093527Z","level":"info","event":"Initialized 2 species with 24 total atoms.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.093918Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.094323Z","level":"info","event":"Folded 1 k-points by 1x1x1 to 1 k-points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.094700Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.095095Z","level":"info","event":"---------- Setting up k-points, bands, fillings ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.095469Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.095781Z","level":"info","event":"WARNING: k-mesh symmetries are a subgroup of size 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.096136Z","level":"info","event":"The effectively sampled k-mesh is a superset of the specified one,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.096459Z","level":"info","event":"and the answers need not match those with symmetries turned off.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.096820Z","level":"info","event":"No reducable k-points.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.097139Z","level":"info","event":"Computing the number of bands and number of electrons","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.097464Z","level":"info","event":"Calculating initial fillings.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.097733Z","level":"info","event":"nElectrons: 199.900000   nBands: 144   nStates: 1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.098009Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.098318Z","level":"info","event":"----- Setting up reduced wavefunction bases (one per k-point) -----","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:48.098686Z","level":"info","event":"average nbasis = 8890.000 , ideal nbasis = 8882.936","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.689258Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.689785Z","level":"info","event":"Initializing DFT-D2 calculator for fluid / solvation:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.690899Z","level":"info","event":"\t V:  C6:  187.33 Eh-a0^6  R0: 2.952 a0","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.691219Z","level":"info","event":"\t O:  C6:   12.14 Eh-a0^6  R0: 2.536 a0","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.692295Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.692619Z","level":"info","event":"---------- Setting up ewald sum ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.692975Z","level":"info","event":"Optimum gaussian width for ewald sums = 4.260641 bohr.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.693340Z","level":"info","event":"Real space sum over 1323 unit cells with max indices [  10  4  3  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.693737Z","level":"info","event":"Reciprocal space sum over 9823 terms with max indices [  5  9  23  ]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.694923Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:04:58.695333Z","level":"info","event":"---------- Allocating electronic variables ----------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:10:19.158061Z","level":"info","event":"Initializing wave functions:  linear combination of atomic orbitals","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:10:19.159901Z","level":"info","event":"V pseudo-atom occupations:   s ( 2 0 )  p ( 6 )  d ( 5 )","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:10:19.160901Z","level":"info","event":"O pseudo-atom occupations:   s ( 2 )  p ( 4 )","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:10:19.161352Z","level":"info","event":"\tFillingsUpdate:  mu: +1.766866724  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:10:19.161881Z","level":"info","event":"LCAOMinimize: Iter:   0  F: -720.1882065214429076  |grad|_K:  7.125e-02  alpha:  1.000e+00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:12:51.862191Z","level":"info","event":"\tFillingsUpdate:  mu: -0.455759584  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:12:51.862655Z","level":"info","event":"LCAOMinimize: Iter:   1  F: -769.1752449530476952  |grad|_K:  6.836e-02  alpha:  8.630e-01  linmin:  5.553e-02  cgtest: -1.049e+00  t[s]:    489.61","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:12:51.863061Z","level":"info","event":"LCAOMinimize: \tBad step direction: g.d > 0.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:14:36.201831Z","level":"info","event":"LCAOMinimize: \tUndoing step.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:14:36.202233Z","level":"info","event":"LCAOMinimize: \tStep failed: resetting search direction.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:14:36.206021Z","level":"info","event":"\tFillingsUpdate:  mu: -0.455759584  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:14:36.206385Z","level":"info","event":"LCAOMinimize: Iter:   2  F: -769.1752449530476952  |grad|_K:  6.836e-02  alpha:  0.000e+00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:17:05.121981Z","level":"info","event":"\tFillingsUpdate:  mu: -0.070797096  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:17:05.122452Z","level":"info","event":"LCAOMinimize: Iter:   3  F: -804.9598945930965783  |grad|_K:  2.738e-02  alpha:  2.758e-01  linmin: -5.650e-02  cgtest:  8.494e-01  t[s]:    742.87","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:17:05.123195Z","level":"info","event":"LCAOMinimize: Encountered beta<0, resetting CG.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:17:48.989015Z","level":"info","event":"LCAOMinimize: \tWrong curvature in test step, increasing alphaT to 8.272873e-01.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:19:33.451835Z","level":"info","event":"\tFillingsUpdate:  mu: -0.024271150  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:19:33.452278Z","level":"info","event":"LCAOMinimize: Iter:   4  F: -812.2309240643211297  |grad|_K:  3.643e-02  alpha: -2.048e-01  linmin: -1.700e-01  cgtest:  4.838e-01  t[s]:    891.20","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:22:01.496988Z","level":"info","event":"LCAOMinimize: \tStep increased F by 5.380786e+01, reducing alpha to 2.022178e-02.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:23:49.872193Z","level":"info","event":"\tFillingsUpdate:  mu: +0.177214284  nElectrons: 199.900000","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:23:49.872827Z","level":"info","event":"LCAOMinimize: Iter:   5  F: -813.3784756628637069  |grad|_K:  4.810e-02  alpha:  2.022e-02  linmin: -2.287e-02  cgtest:  3.641e-01  t[s]:   1147.62","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T23:24:05.122523Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-09-01T23:24:10.174924Z","level":"error","event":"Task killed!","logger":"task"}
+{"timestamp":"2025-09-01T23:24:47.239479Z","level":"info","event":"LCAOMinimize: \tWrong curvature in test step, increasing alphaT to 6.066533e-02.","chan":"stdout","logger":"task"}

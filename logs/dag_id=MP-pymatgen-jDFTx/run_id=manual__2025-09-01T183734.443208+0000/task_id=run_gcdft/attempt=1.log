@@ -1,0 +1,87 @@
+{"timestamp":"2025-09-01T18:37:59.041080","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-01T18:37:59.041669","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/my_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-01T18:38:03.535109Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.535555Z","level":"info","event":"*************** JDFTx 1.7.0  ***************","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.536225Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.587686Z","level":"info","event":"Start date and time: Mon Sep  1 18:38:03 2025","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.588078Z","level":"info","event":"Executable jdftx with command-line: -i /opt/airflow/output/gc_dft/mp-1393040-111-2_-0.1.in","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.588401Z","level":"info","event":"Running on hosts (process indices):  4c196f876d10 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.588643Z","level":"info","event":"Divided in process groups (process indices):  0 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.588835Z","level":"info","event":"Resource initialization completed at t[s]:      0.00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.589078Z","level":"info","event":"Run totals: 1 processes, 8 threads, 0 GPUs","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.589315Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.589578Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.589770Z","level":"info","event":"Encountered 1 errors while parsing input:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.589989Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.590186Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.590400Z","level":"info","event":"Command 'fluid-initial-state'  with command line:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.590702Z","level":"info","event":"\tfluid-initial-state read fluidState","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.590937Z","level":"info","event":"failed with message:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.591314Z","level":"info","event":"\tExtra arguments 'fluidState'  at end of command","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.591755Z","level":"info","event":"The correct usage of this command is described below:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.592050Z","level":"info","event":"\tfluid-initial-state <filename>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.592334Z","level":"info","event":"Read initial state of a fluid (compatible with *.fluidState from dump End State)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.592656Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.592976Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.593287Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.593547Z","level":"info","event":"Input parsing failed with 1 errors (run with -t for command syntax)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.593777Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.594014Z","level":"info","event":"End date and time: Mon Sep  1 18:38:03 2025  (Duration: 0-0:00:00.01)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.594292Z","level":"info","event":"Failed.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.887683Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.888166Z","level":"info","event":"*************** JDFTx 1.7.0  ***************","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.888533Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.939897Z","level":"info","event":"Start date and time: Mon Sep  1 18:38:03 2025","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.940415Z","level":"info","event":"Executable jdftx with command-line: -i /opt/airflow/output/gc_dft/mp-1393040-111-2_0.0.in","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.940731Z","level":"info","event":"Running on hosts (process indices):  4c196f876d10 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.941069Z","level":"info","event":"Divided in process groups (process indices):  0 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.941335Z","level":"info","event":"Resource initialization completed at t[s]:      0.00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.941680Z","level":"info","event":"Run totals: 1 processes, 8 threads, 0 GPUs","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.941983Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.942600Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.942893Z","level":"info","event":"Encountered 1 errors while parsing input:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.943176Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.943430Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.943685Z","level":"info","event":"Command 'fluid-initial-state'  with command line:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.943939Z","level":"info","event":"\tfluid-initial-state read fluidState","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.944180Z","level":"info","event":"failed with message:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.944438Z","level":"info","event":"\tExtra arguments 'fluidState'  at end of command","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.944648Z","level":"info","event":"The correct usage of this command is described below:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.944890Z","level":"info","event":"\tfluid-initial-state <filename>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.945191Z","level":"info","event":"Read initial state of a fluid (compatible with *.fluidState from dump End State)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.945674Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.946027Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.946336Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.946620Z","level":"info","event":"Input parsing failed with 1 errors (run with -t for command syntax)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.947166Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.947613Z","level":"info","event":"End date and time: Mon Sep  1 18:38:03 2025  (Duration: 0-0:00:00.01)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:03.947884Z","level":"info","event":"Failed.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.244019Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.244696Z","level":"info","event":"*************** JDFTx 1.7.0  ***************","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.245243Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.295799Z","level":"info","event":"Start date and time: Mon Sep  1 18:38:04 2025","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.296203Z","level":"info","event":"Executable jdftx with command-line: -i /opt/airflow/output/gc_dft/mp-1393040-111-2_0.1.in","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.296482Z","level":"info","event":"Running on hosts (process indices):  4c196f876d10 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.296762Z","level":"info","event":"Divided in process groups (process indices):  0 (0)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.297108Z","level":"info","event":"Resource initialization completed at t[s]:      0.00","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.297380Z","level":"info","event":"Run totals: 1 processes, 8 threads, 0 GPUs","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.297747Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.297986Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.298257Z","level":"info","event":"Encountered 1 errors while parsing input:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.298727Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.299069Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.299293Z","level":"info","event":"Command 'fluid-initial-state'  with command line:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.299847Z","level":"info","event":"\tfluid-initial-state read fluidState","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.300324Z","level":"info","event":"failed with message:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.300635Z","level":"info","event":"\tExtra arguments 'fluidState'  at end of command","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.301019Z","level":"info","event":"The correct usage of this command is described below:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.301331Z","level":"info","event":"\tfluid-initial-state <filename>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.301648Z","level":"info","event":"Read initial state of a fluid (compatible with *.fluidState from dump End State)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.302093Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.302545Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.302786Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.303016Z","level":"info","event":"Input parsing failed with 1 errors (run with -t for command syntax)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.303300Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.303518Z","level":"info","event":"End date and time: Mon Sep  1 18:38:04 2025  (Duration: 0-0:00:00.01)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.303720Z","level":"info","event":"Failed.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-01T18:38:04.303004","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}

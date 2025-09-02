@@ -1,0 +1,524 @@
+
+*************** JDFTx 1.7.0  ***************
+
+Start date and time: Mon Sep  1 20:21:32 2025
+Executable jdftx with command-line: -i /opt/airflow/output/gc_dft/mp-755394-111-3_0.1.in
+Running on hosts (process indices):  41a82e7e5a55 (0)
+Divided in process groups (process indices):  0 (0)
+Resource initialization completed at t[s]:      0.00
+Run totals: 1 processes, 8 threads, 0 GPUs
+
+
+Input parsed successfully to the following command list (including defaults):
+
+basis kpoint-dependent
+coords-type Cartesian
+core-overlap-check vector
+coulomb-interaction Periodic
+davidson-band-ratio 1.1
+dump End State
+dump-name $VAR
+elec-cutoff 10
+elec-eigen-algo Davidson
+elec-ex-corr gga-PBE
+elec-initial-charge 0.100000
+elec-smearing Fermi 0.00734
+electronic-minimize  \
+	dirUpdateScheme      FletcherReeves \
+	linminMethod         DirUpdateRecommended \
+	nIterations          30 \
+	history              15 \
+	knormThreshold       0 \
+	maxThreshold         no \
+	energyDiffThreshold  1e-05 \
+	nEnergyDiff          2 \
+	convergeAll          no \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	abortOnFailedStep    no \
+	fdTest               no
+exchange-regularization WignerSeitzTruncated
+fluid LinearPCM 298.000000 1.013250
+fluid-anion F- 1 MeanFieldLJ \
+	epsBulk 1 \
+	pMol 0 \
+	epsInf 1 \
+	Pvap 0 \
+	sigmaBulk 0 \
+	Rvdw 2.24877 \
+	Res 0 \
+	tauNuc 343133
+fluid-cation Na+ 1 MeanFieldLJ \
+	epsBulk 1 \
+	pMol 0 \
+	epsInf 1 \
+	Pvap 0 \
+	sigmaBulk 0 \
+	Rvdw 2.19208 \
+	Res 0 \
+	tauNuc 343133
+fluid-ex-corr lda-TF lda-PZ
+fluid-gummel-loop 10 1.000000e-05
+fluid-minimize  \
+	dirUpdateScheme      PolakRibiere \
+	linminMethod         DirUpdateRecommended \
+	nIterations          400 \
+	history              15 \
+	knormThreshold       1e-11 \
+	maxThreshold         no \
+	energyDiffThreshold  0 \
+	nEnergyDiff          2 \
+	convergeAll          no \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      6 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	abortOnFailedStep    no \
+	fdTest               no
+fluid-solvent H2O 55.338 ScalarEOS \
+	epsBulk 78.4 \
+	pMol 0.92466 \
+	epsInf 1.77 \
+	Pvap 1.06736e-10 \
+	sigmaBulk 4.62e-05 \
+	Rvdw 2.61727 \
+	Res 1.42 \
+	tauNuc 343133 \
+	poleEl 15 7 1
+forces-output-coords Positions
+initial-state $VAR
+ion V   0.000297000000000   0.000206000000000  40.527760999999998 1
+ion V  -2.867357999999999   4.115779999999999  33.076448999999997 1
+ion V   0.000297000000000   0.000206000000000  51.335754999999992 1
+ion V  -2.867357999999999   4.115779999999999  43.884442999999983 1
+ion V   2.087893999999999   6.178677999999999  29.394374999999997 1
+ion V   2.923822000000000   2.052782000000000  35.129578999999993 1
+ion V   0.000297000000000   0.000206000000000  62.143747999999995 1
+ion V  -2.867357999999999   4.115779999999999  54.692435999999994 1
+ion V   2.087893999999999   6.178677999999999  40.202368999999983 1
+ion V   2.923822000000000   2.052782000000000  45.937573000000000 1
+ion O  -0.406594999999999   3.963560999999999  29.978448999999998 1
+ion O  -3.080845999999999   7.974219999999999  22.816246999999997 1
+ion O   8.092021000000001   0.256846000000000  30.899395999999992 1
+ion O   5.417259000000000   4.267018999999999  23.737565000000000 1
+ion O  -0.406594999999999   3.963560999999999  40.786441999999994 1
+ion O   4.781548000000001   4.427946999999999  29.221173999999994 1
+ion O   2.336115000000000   7.929795999999998  21.273168999999999 1
+ion O  -3.080845999999999   7.974219999999999  33.624240999999998 1
+ion O   8.092021000000001   0.256846000000000  41.707389999999990 1
+ion O   2.674004000000000   0.301442000000000  43.251495999999996 1
+ion O   0.229520000000000   3.803208999999999  35.304034999999999 1
+ion O   5.417259000000000   4.267018999999999  34.545558999999997 1
+ion O  -0.406594999999999   3.963560999999999  51.594435999999995 1
+ion O   4.781548000000001   4.427946999999999  40.029167999999999 1
+ion O   2.336115000000000   7.929795999999998  32.081162999999989 1
+ion O  -3.080845999999999   7.974219999999999  44.432234000000001 1
+ion O   8.092021000000001   0.256846000000000  52.515383999999983 1
+ion O   2.674004000000000   0.301442000000000  54.059489999999990 1
+ion O   0.229520000000000   3.803208999999999  46.112028999999993 1
+ion O   5.417259000000000   4.267018999999999  45.353552999999991 1
+ion-species GBRV/$ID_pbe.uspp
+ion-width Ecut
+ionic-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0.0001 \
+	maxThreshold         no \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	convergeAll          no \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	abortOnFailedStep    no \
+	fdTest               no
+kpoint   0.500000000000   0.500000000000   0.500000000000  1.00000000000000
+kpoint-folding 1 1 1 
+latt-move-scale 1 1 1
+latt-scale 1 1 1 
+lattice  \
+	  10.749050000000000   -5.737742000000000    0.000000000000000  \
+	   0.000000000000000    8.231180999999999    0.000000000000000  \
+	 -12.434680000000000  -14.908436999999999   97.271944000000005 
+lattice-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0 \
+	maxThreshold         no \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	convergeAll          no \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	abortOnFailedStep    no \
+	fdTest               no
+lcao-params 15 5e-05 0.00734
+pcm-variant CANDLE
+perturb-minimize  \
+	nIterations            0 \
+	algorithm              MINRES \
+	residualTol            0.0001 \
+	residualDiffThreshold  0.0001 \
+	CGBypass               no \
+	recomputeResidual      no
+spintype no-spin
+subspace-rotation-factor 1 yes
+symmetries automatic
+symmetry-threshold 0.0001
+
+
+
+---------- Setting up symmetries ----------
+
+Non-trivial transmission matrix:
+[   1   0   3  ]
+[   0   1   3  ]
+[   0   0   1  ]
+with reduced lattice vectors:
+[     10.749050     -5.737742     15.033924  ]
+[      0.000000      8.231181     24.693543  ]
+[    -12.434680    -14.908437     15.242593  ]
+
+Found 2 point-group symmetries of the bravais lattice
+Found 1 space-group symmetries with basis
+Applied RMS atom displacement 0 bohrs to make symmetries exact.
+
+---------- Initializing the Grid ----------
+R = 
+[      10.7491     -5.73774            0  ]
+[            0      8.23118            0  ]
+[     -12.4347     -14.9084      97.2719  ]
+unit cell volume = 8606.37
+G =
+[   0.584534   0.407463         -0  ]
+[         -0   0.763339          0  ]
+[  0.0747234   0.169081   0.064594  ]
+Minimum fftbox size, Smin = [  48  52  280  ]
+Chosen fftbox size, S = [  48  54  280  ]
+
+---------- Exchange Correlation functional ----------
+Initalized PBE GGA exchange.
+Initalized PBE GGA correlation.
+
+---------- Setting up pseudopotentials ----------
+Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0.561985
+
+Reading pseudopotential file '/opt/jdftx-master/build/pseudopotentials/GBRV/v_pbe.uspp':
+  Title: V.  Created by USPP 7.3.6 on 31-3-15
+  Reference state energy: -72.228583.  13 valence electrons in orbitals:
+    |300>  occupation: 2  eigenvalue: -2.581040
+    |310>  occupation: 6  eigenvalue: -1.618497
+    |400>  occupation: 2  eigenvalue: -0.172800
+    |320>  occupation: 3  eigenvalue: -0.189802
+  lMax: 2  lLocal: 3  QijEcut: 6
+  6 projectors sampled on a log grid with 593 points:
+    l: 0  eig: -2.581041  rCut: 1.5
+    l: 0  eig: -0.172801  rCut: 1.5
+    l: 1  eig: -1.618497  rCut: 1.6
+    l: 1  eig: 0.150000  rCut: 1.6
+    l: 2  eig: -0.189802  rCut: 1.7
+    l: 2  eig: 0.150000  rCut: 1.7
+  Partial core density with radius 0.8
+  Transforming core density to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming local potential to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 307 points.
+  Transforming density augmentations to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 307 points.
+  Core radius for overlap checks: 1.80 bohrs.
+
+Reading pseudopotential file '/opt/jdftx-master/build/pseudopotentials/GBRV/o_pbe.uspp':
+  Title: O.  Created by USPP 7.3.6 on 3-2-2014
+  Reference state energy: -15.894388.  6 valence electrons in orbitals:
+    |200>  occupation: 2  eigenvalue: -0.878823
+    |210>  occupation: 4  eigenvalue: -0.332131
+  lMax: 2  lLocal: 2  QijEcut: 6
+  5 projectors sampled on a log grid with 511 points:
+    l: 0  eig: -0.878823  rCut: 1.25
+    l: 0  eig: 0.000000  rCut: 1.25
+    l: 1  eig: -0.332132  rCut: 1.25
+    l: 1  eig: 0.000000  rCut: 1.25
+    l: 2  eig: 1.000000  rCut: 1.25
+  Partial core density with radius 0.7
+  Transforming core density to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming local potential to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 307 points.
+  Transforming density augmentations to a uniform radial grid of dG=0.02 with 3007 points.
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 307 points.
+  Core radius for overlap checks: 1.25 bohrs.
+
+Initialized 2 species with 30 total atoms.
+
+Folded 1 k-points by 1x1x1 to 1 k-points.
+
+---------- Setting up k-points, bands, fillings ----------
+No reducable k-points. 
+Computing the number of bands and number of electrons
+Calculating initial fillings.
+nElectrons: 250.100000   nBands: 180   nStates: 1
+
+----- Setting up reduced wavefunction bases (one per k-point) -----
+average nbasis = 13004.000 , ideal nbasis = 12999.116
+
+Initializing DFT-D2 calculator for fluid / solvation:
+	 V:  C6:  187.33 Eh-a0^6  R0: 2.952 a0
+	 O:  C6:   12.14 Eh-a0^6  R0: 2.536 a0
+
+---------- Setting up ewald sum ----------
+Optimum gaussian width for ewald sums = 4.560127 bohr.
+Real space sum over 1365 unit cells with max indices [  6  7  3  ]
+Reciprocal space sum over 15525 terms with max indices [  7  7  34  ]
+
+---------- Allocating electronic variables ----------
+Reading eigenvalues from 'eigenvals'.
+Initializing wave functions:  reading from 'wfns'
+----- createFluidSolver() ----- (Fluid-side solver setup)
+   Initializing fluid molecule 'H2O'
+     Initializing site 'O'
+       Electron density: proportional to exp(-r/0.36935)*erfc((r-0.51523)/0.36823) with norm 6.826
+       Charge density: gaussian nuclear width 0.478731 with net site charge 0.826
+       Polarizability: cuspless exponential with width 0.32 and norm 3.73
+       Hard sphere radius: 2.57003 bohrs
+       Positions in reference frame:
+         [ +0.000000 +0.000000 +0.000000 ]
+     Initializing site 'H'
+       Electron density: proportional to exp(-r/0.34641)*erfc((r-0)/0.390882) with norm 0.587
+       Charge density: gaussian nuclear width 0.377945 with net site charge -0.413
+       Polarizability: cuspless exponential with width 0.39 and norm 3.3
+       Positions in reference frame:
+         [ +0.000000 -1.441945 +1.122523 ]
+         [ +0.000000 +1.441945 +1.122523 ]
+     Net charge: 0   dipole magnitude: 0.927204
+     Initializing spherical shell mfKernel with radius 2.61727 Bohr
+     deltaS corrections:
+       site 'O': -7.54299
+       site 'H': -6.83917
+   Initializing fluid molecule 'Na+'
+     Initializing site 'Na'
+       Electron density: proportional to exp(-r/0.19682)*erfc((r-0.71491)/0.41314) with norm 8.1383
+       Charge density: gaussian nuclear width 0.365347 with net site charge -1
+       Hard sphere radius: 1.86327 bohrs
+       Positions in reference frame:
+         [ +0.000000 +0.000000 +0.000000 ]
+     Net charge: -1   dipole magnitude: 0
+     Initializing gaussian mfKernel with width: 1.55004 Bohr
+     deltaS corrections:
+       site 'Na': -22.3555
+   Initializing fluid molecule 'F-'
+     Initializing site 'F'
+       Electron density: proportional to exp(-r/0.38886)*erfc((r-0)/0.438782) with norm 8
+       Charge density: gaussian nuclear width 0.374796 with net site charge 1
+       Hard sphere radius: 2.39995 bohrs
+       Positions in reference frame:
+         [ +0.000000 +0.000000 +0.000000 ]
+     Net charge: 1   dipole magnitude: 0
+     Initializing gaussian mfKernel with width: 1.59012 Bohr
+     deltaS corrections:
+       site 'F': -9.04335
+
+Correction to mu due to finite nuclear width = -0.0576434
+   Cavity determined by nc: 0.00142 and sigma: 0.707107
+   Nonlocal vdW cavity from gaussian model electron density with norm = 8 and sigma = 0.993594 bohr
+   Charge asymmetry in cavity with sensitivity pCavity = 36.5 e-bohr/Eh
+   Electrostatic cavity expanded by eta = 1.46 bohrs
+   Weighted density cavitation model constrained by Nbulk: 0.0049383 bohr^-3, Pvap: 3.14029 kPa, Rvdw: 2.61727 bohr and sigmaBulk: 4.62e-05 Eh/bohr^2 at T: 298 K.
+   Weighted density dispersion model using vdW pair potentials with single solvent site with sqrtC6eff: 0.77 SI.
+Reading fluid state from 'fluidState'
+
+
+---- Citations for features of the code used in this run ----
+
+   Software package:
+      R. Sundararaman, K. Letchworth-Weaver, K.A. Schwarz, D. Gunceler, Y. Ozhabes and T.A. Arias, 'JDFTx: software for joint density-functional theory', SoftwareX 6, 278 (2017)
+
+   gga-PBE exchange-correlation functional:
+      J.P. Perdew, K. Burke and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+
+   Pseudopotentials:
+      KF Garrity, JW Bennett, KM Rabe and D Vanderbilt, Comput. Mater. Sci. 81, 446 (2014)
+
+   DFT-D2 dispersion correction:
+      S. Grimme, J. Comput. Chem. 27, 1787 (2006)
+
+   Charge-asymmetric nonlocally-determined local-electric (CANDLE) solvation model:
+      R. Sundararaman and W.A. Goddard III, J. Chem. Phys. 142, 064107 (2015)
+
+   Total energy minimization with Auxiliary Hamiltonian:
+      C. Freysoldt, S. Boeck, and J. Neugebauer, Phys. Rev. B 79, 241103(R) (2009)
+
+This list may not be complete. Please suggest additional citations or
+report any other bugs at https://github.com/shankar1729/jdftx/issues
+
+Initialization completed successfully at t[s]:      9.58
+
+
+-------- Electronic minimization -----------
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529462 of unit cell:	Completed after 19 iterations at t[s]:     22.36
+	FillingsUpdate:  mu: -0.182447893  nElectrons: 250.100000
+ElecMinimize: Iter:   0  F: -1034.630510854217619  |grad|_K:  1.375e-04  alpha:  1.000e+00
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.546207 of unit cell:	Completed after 31 iterations at t[s]:     50.25
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529737 of unit cell:	Completed after 28 iterations at t[s]:     61.16
+	FillingsUpdate:  mu: -0.181389387  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.41
+ElecMinimize: Iter:   1  F: -1034.631423570033803  |grad|_K:  3.676e-05  alpha:  2.376e-02  linmin:  3.181e-02  t[s]:     76.99
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529795 of unit cell:	Completed after 12 iterations at t[s]:     85.74
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529833 of unit cell:	Completed after 10 iterations at t[s]:     94.83
+	FillingsUpdate:  mu: -0.182419273  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.22
+ElecMinimize: Iter:   2  F: -1034.631532737502994  |grad|_K:  1.365e-05  alpha:  3.977e-02  linmin: -9.198e-05  t[s]:    109.86
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529830 of unit cell:	Completed after 10 iterations at t[s]:    119.41
+ElecMinimize: 	Predicted alpha/alphaT>3.000000, increasing alphaT to 1.193002e-01.
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529823 of unit cell:	Completed after 12 iterations at t[s]:    129.59
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529821 of unit cell:	Completed after 7 iterations at t[s]:    140.90
+	FillingsUpdate:  mu: -0.183983845  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.118
+	SubspaceRotationAdjust: resetting CG because factor has changed by 0.117678
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529821 of unit cell:	Completed after 0 iterations at t[s]:    165.55
+ElecMinimize: 	State modified externally: resetting search direction.
+ElecMinimize: Iter:   3  F: -1034.631593269885798  |grad|_K:  6.304e-06  alpha:  1.375e-01
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529790 of unit cell:	Completed after 9 iterations at t[s]:    193.62
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529751 of unit cell:	Completed after 9 iterations at t[s]:    203.49
+	FillingsUpdate:  mu: -0.184296015  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.114
+ElecMinimize: Iter:   4  F: -1034.631622632262406  |grad|_K:  4.808e-06  alpha:  3.122e-01  linmin: -2.001e-04  t[s]:    219.87
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529629 of unit cell:	Completed after 12 iterations at t[s]:    229.72
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529603 of unit cell:	Completed after 7 iterations at t[s]:    239.78
+	FillingsUpdate:  mu: -0.184864436  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.0963
+ElecMinimize: Iter:   5  F: -1034.631643454210007  |grad|_K:  3.242e-06  alpha:  3.793e-01  linmin: -9.152e-05  t[s]:    256.06
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529501 of unit cell:	Completed after 11 iterations at t[s]:    265.05
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529484 of unit cell:	Completed after 4 iterations at t[s]:    273.81
+	FillingsUpdate:  mu: -0.185418390  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.0799
+ElecMinimize: Iter:   6  F: -1034.631654545572019  |grad|_K:  2.351e-06  alpha:  4.444e-01  linmin: -1.033e-04  t[s]:    289.91
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529422 of unit cell:	Completed after 9 iterations at t[s]:    298.78
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529431 of unit cell:	Completed after 3 iterations at t[s]:    307.34
+	FillingsUpdate:  mu: -0.185589106  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.0688
+ElecMinimize: Iter:   7  F: -1034.631659527640295  |grad|_K:  1.446e-06  alpha:  3.800e-01  linmin: -2.706e-05  t[s]:    323.14
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529396 of unit cell:	Completed after 3 iterations at t[s]:    331.66
+	Linear fluid (dielectric constant: 78.4, screening length: 5.74355 Bohr) occupying 0.529372 of unit cell:	Completed after 3 iterations at t[s]:    340.05
+	FillingsUpdate:  mu: -0.185485046  nElectrons: 250.100000
+	SubspaceRotationAdjust: set factor to 0.0825
+ElecMinimize: Iter:   8  F: -1034.631662674799372  |grad|_K:  1.124e-06  alpha:  6.372e-01  linmin:  4.153e-06  t[s]:    356.27
+ElecMinimize: Converged (|Delta F|<1.000000e-05 for 2 iters).
+Setting wave functions to eigenvectors of Hamiltonian
+
+# Ionic positions in cartesian coordinates:
+ion V   0.000297000000000   0.000206000000000  40.527760999999998 1
+ion V  -2.867357999999999   4.115779999999999  33.076448999999997 1
+ion V   0.000297000000000   0.000206000000000  51.335754999999992 1
+ion V  -2.867357999999999   4.115779999999999  43.884442999999983 1
+ion V   2.087893999999999   6.178677999999999  29.394374999999997 1
+ion V   2.923822000000000   2.052782000000000  35.129578999999993 1
+ion V   0.000297000000000   0.000206000000000  62.143747999999995 1
+ion V  -2.867357999999999   4.115779999999999  54.692435999999994 1
+ion V   2.087893999999999   6.178677999999999  40.202368999999983 1
+ion V   2.923822000000000   2.052782000000000  45.937573000000000 1
+ion O  -0.406594999999999   3.963560999999999  29.978448999999998 1
+ion O  -3.080845999999999   7.974219999999999  22.816246999999997 1
+ion O   8.092021000000001   0.256846000000000  30.899395999999992 1
+ion O   5.417259000000000   4.267018999999999  23.737565000000000 1
+ion O  -0.406594999999999   3.963560999999999  40.786441999999994 1
+ion O   4.781548000000001   4.427946999999999  29.221173999999994 1
+ion O   2.336115000000000   7.929795999999998  21.273168999999999 1
+ion O  -3.080845999999999   7.974219999999999  33.624240999999998 1
+ion O   8.092021000000001   0.256846000000000  41.707389999999990 1
+ion O   2.674004000000000   0.301442000000000  43.251495999999996 1
+ion O   0.229520000000000   3.803208999999999  35.304034999999999 1
+ion O   5.417259000000000   4.267018999999999  34.545558999999997 1
+ion O  -0.406594999999999   3.963560999999999  51.594435999999995 1
+ion O   4.781548000000001   4.427946999999999  40.029167999999999 1
+ion O   2.336115000000000   7.929795999999998  32.081162999999989 1
+ion O  -3.080845999999999   7.974219999999999  44.432234000000001 1
+ion O   8.092021000000001   0.256846000000000  52.515383999999983 1
+ion O   2.674004000000000   0.301442000000000  54.059489999999990 1
+ion O   0.229520000000000   3.803208999999999  46.112028999999993 1
+ion O   5.417259000000000   4.267018999999999  45.353552999999991 1
+
+# Forces in Cartesian coordinates:
+force V   0.018268760526194   0.037983640379991   0.047344652206058 1
+force V   0.017390662956968   0.040537468345821   0.056479085379463 1
+force V   0.000902806860451   0.001698361131076  -0.001837922562093 1
+force V   0.001618594337744   0.001789671428819  -0.001805019880751 1
+force V  -0.017644264912664  -0.011608258106464  -0.003985297442986 1
+force V  -0.000195936669771  -0.031873441118923   0.072795346338847 1
+force V  -0.016679925073844  -0.035236407589274  -0.052382132094401 1
+force V  -0.015038605978330  -0.037952423464678  -0.060665185342962 1
+force V  -0.001122457098060   0.029373026693188  -0.070171649840092 1
+force V   0.016997680319692   0.011573158140884   0.006282475245287 1
+force O  -0.001048127545375   0.032663812341504   0.017601334201190 1
+force O  -0.034830415225345   0.056511921306868  -0.019290650794297 1
+force O   0.033127085997100   0.032638503449118  -0.045746549586206 1
+force O   0.033185040378408   0.019765033906032  -0.048965820862462 1
+force O   0.010940850939765  -0.003877500126480   0.001530370682013 1
+force O   0.018567482274851  -0.004551149581739   0.023228348837348 1
+force O   0.056841554059631   0.002351833007647   0.064400690016258 1
+force O   0.000069432168840  -0.001112631315883  -0.018700334741009 1
+force O  -0.000120696956350   0.001204475161495   0.018588416134532 1
+force O  -0.024935441741296  -0.006634963303325  -0.027267495313957 1
+force O  -0.022267142933334  -0.011239121863287  -0.031429359437408 1
+force O  -0.010167776570678   0.004144528844377  -0.002351699346926 1
+force O  -0.033304596587705  -0.019141840239400   0.048662968880026 1
+force O   0.022034579757680   0.011631305200161   0.030812832139660 1
+force O   0.024973870810038   0.006660506685399   0.027590310837632 1
+force O  -0.033382643183204  -0.032481131401298   0.045725256835945 1
+force O   0.034752692963416  -0.056486032126460   0.019528514332791 1
+force O  -0.056565014698758  -0.002425125364498  -0.064296107694296 1
+force O  -0.018689144516481   0.004932228340704  -0.023438541486132 1
+force O   0.001579261991703  -0.032222431797336  -0.018237309284815 1
+
+# Energy components:
+   A_diel =       -0.2798606846772591
+   Eewald =     1419.7625376429457447
+       EH =     2315.5549126484593216
+     Eloc =    -4992.7949166312910165
+      Enl =       45.4696193242019717
+      Exc =     -167.6464497341775939
+ Exc_core =        9.4982509039208995
+       KE =      335.9550141007139246
+  MuShift =       -0.0057643424089930
+-------------------------------------
+     Etot =    -1034.4866567723126991
+       TS =        0.1450059024866822
+-------------------------------------
+        F =    -1034.6316626747993723
+
+IonicMinimize: Iter:   0  F: -1034.631662674799372  |grad|_K:  3.053e-02  t[s]:    381.57
+IonicMinimize: None of the convergence criteria satisfied after 0 iterations.
+
+#--- Lowdin population analysis ---
+# oxidation-state V +1.487 +1.480 +1.347 +1.323 +1.320 +1.420 +1.510 +1.485 +1.417 +1.319
+# oxidation-state O -0.692 -0.644 -0.787 -0.780 -0.637 -0.561 -0.795 -0.667 -0.667 -0.561 -0.521 -0.637 -0.780 -0.521 -0.561 -0.787 -0.644 -0.796 -0.561 -0.692
+
+
+Dumping 'fillings' ... done
+Dumping 'wfns' ... done
+Dumping 'fluidState' ... done
+Dumping 'eigenvals' ... done
+End date and time: Mon Sep  1 20:27:55 2025  (Duration: 0-0:06:22.42)
+Done!
