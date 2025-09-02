@@ -81,3 +81,12 @@ The [docker-compose](./docker-compose.yaml) instructions follow Airflow's templa
 6. This DAG does not have a set schedule for demo purposes. To run, click `Trigger`. *Warning*: the bottle-neck computation is the GC-DFT task, which could take up to two hours for certain samples.
 
 7. Once the DAG run completed, output files are mounted locally to `./output/`.
+
+8. Shutdown container for the day:
+```
+docker compose down
+```
+Or clean up (reclaim spaces and memory) all container and images:
+```
+docker system prune
+```
