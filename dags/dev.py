@@ -95,7 +95,7 @@ def write_report(results):
 
 #----------DAG settings---------------
 @dag(
-    dag_id="dev",
+    dag_id="dev-only",
     start_date=datetime(2025, 8, 10),
     schedule=None,
     catchup=False,
@@ -103,7 +103,7 @@ def write_report(results):
 )
 def dev():
     print("Dev analysis")
-    results=analyze_electrochem("mp-755394-111-3")
+    results=analyze_electrochem("mp-1393040-111-2")
     load_db(results)
     write_report(results)
 dev()

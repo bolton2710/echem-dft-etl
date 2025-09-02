@@ -76,7 +76,6 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
-    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - ${AIRFLOW_PROJ_DIR:-.}/output:/opt/airflow/output
     - //var/run/docker.sock:/var/run/docker.sock #to access local Docker --> run JDFTx from a different container
   user: "${AIRFLOW_UID:-50000}:0"
@@ -266,14 +265,14 @@ services:
         echo
         echo "Creating missing opt dirs if missing:"
         echo
-        mkdir -v -p /opt/airflow/{logs,dags,plugins,config}
+        mkdir -v -p /opt/airflow/{logs,dags,config}
         echo
         echo "Airflow version:"
         /entrypoint airflow version
         echo
         echo "Files in shared volumes:"
         echo
-        ls -la /opt/airflow/{logs,dags,plugins,config}
+        ls -la /opt/airflow/{logs,dags,config}
         echo
         echo "Running airflow config list to create default config file if missing."
         echo
@@ -281,7 +280,7 @@ services:
         echo
         echo "Files in shared volumes:"
         echo
-        ls -la /opt/airflow/{logs,dags,plugins,config}
+        ls -la /opt/airflow/{logs,dags,config}
         echo
         echo "Change ownership of files in /opt/airflow to ${AIRFLOW_UID}:0"
         echo
@@ -289,11 +288,11 @@ services:
         echo
         echo "Change ownership of files in shared volumes to ${AIRFLOW_UID}:0"
         echo
-        chown -v -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins,config}
+        chown -v -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,config}
         echo
         echo "Files in shared volumes:"
         echo
-        ls -la /opt/airflow/{logs,dags,plugins,config}
+        ls -la /opt/airflow/{logs,dags,config}
 
     # yamllint enable rule:line-length
     environment:

@@ -218,7 +218,7 @@ def write_report(results):
 
 #----------DAG settings---------------
 @dag(
-    dag_id="MP-pymatgen-jDFTx",
+    dag_id="my-DAG",
     start_date=datetime(2025, 8, 10),
     schedule=None,
     catchup=False,
