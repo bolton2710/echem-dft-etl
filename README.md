@@ -1,6 +1,6 @@
 # Demo of ETL workflow using Airflow for electrochemical oxide materials
 
-## 1. Walkthrough (5 mins read)
+## 1. Walkthrough (5 minutes read)
 
 ### A. Intro
 Electrodes are the building blocks for battery and electrocatalysis applications.
@@ -15,7 +15,7 @@ This workflow—broadly classified as Extract-Transform-Load (ETL)—comprises o
 2. Generate surfaces with different facets and termination  using [pymatgen](https://pymatgen.org/).
 3. Run electrochemical grand-canonical DFT (GC-DFT) using [JDFTx](https://jdftx.org).
 4. Analyze GC-DFT output for electrochemical potential of zero charge (PZC) and double-layer capacitance.
-5. Load data to a [postgreSQL](https://www.postgresql.org/) database.
+5. Load data to a [postgreSQL](https://www.postgresql.org/) database using SQL.
 6. Print report.
 
 [Apache-Airflow](https://airflow.apache.org/) is used for orchestrating the above ETL workflow.
@@ -44,13 +44,13 @@ The excess charges versus potentials should yield a linear line, of which the sl
 
 ![Example of report](./output/visualize/mp-755394-111-3.png)
 
-My work showed the PZC and capacitance to be important descriptors for the of adsorption thermodynamics and catalytic reaction kinetics.
+My work showed the PZC and capacitance to be important descriptors for the adsorption thermodynamics and catalytic reaction kinetics.
 \[[1](https://www.nature.com/articles/s42004-025-01579-y),
 [2](https://pubs.rsc.org/en/content/articlehtml/2025/sc/d5sc03757c),
 [3](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.4c01457),
 [4](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.4c01032)\]
 
-## 2. Reproduce (1-2 hours)
+## 2. Reproduce (set-up: 15 minutes; run: 1-2 hours)
 
 *Requirements*: [Docker](https://docs.docker.com/get-started/get-docker/)
 

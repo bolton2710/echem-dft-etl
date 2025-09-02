@@ -113,6 +113,12 @@ def randomize_slab(poscar_dirs):
 from utils import write_jdftx #import util func to write input for dft
 @task(execution_timeout=timedelta(seconds=10800)) #set 3hr max run time
 def run_gcdft(poscar_path):
+    """
+    Generate JDFTx input from the saved poscar using the utils.write_jdftx function.
+    Run JDFTx using subprocess.
+    Args:
+        poscar_path (string): path to sample poscar to compute
+    """
     filename=Path(poscar_path).stem
     #Create directory to run DFT
     dftdir=Path(__file__).resolve().parent.parent / "output" / "gc_dft" 
@@ -133,6 +139,13 @@ def run_gcdft(poscar_path):
 
 @task
 def analyze_electrochem(filename):
+    """
+    Read JDFTx output and extract the Fermi energy and number of electrons.
+    Compute the pzc and capacitance.
+    Make plot and save as picture for the report.
+    Args:
+        filename (string): name of sample poscar to analyze
+    """
     #Read GC-DFT output
     dftdir=Path(__file__).resolve().parent.parent / "output" / "gc_dft"
     fermis, nes=[], []
@@ -172,6 +185,13 @@ def analyze_electrochem(filename):
 
 @task
 def load_db(results):
+    """
+    Connect the my_postgres db, initiated with Airflow.
+    Create a table in SQL.
+    Insert data computed from GC-DFT, ensure no duplicates based on unique material-id
+    Args:
+        results (list): list of output from analyze_electrochem function.
+    """
     #connection to postgres db
     conn=psycopg2.connect(host="my_postgres", dbname="echem_postgres", user="airflow", password="airflow")
     cur=conn.cursor()
@@ -192,6 +212,12 @@ def load_db(results):
 
 @task
 def write_report(results):
+    """
+    Generate a figure to serve as the report.
+    The main figure combines the capacitance/pzc analysis with atomic structure.
+    Args:
+        results (list): list of output from analyze_electrochem function.
+    """
     filename=results[0]
     #save atomic structure as png
     poscar_dir=Path(__file__).resolve().parent.parent / "output" / "slab_poscars"
@@ -226,7 +252,7 @@ def write_report(results):
 )
 def run_dag():
     """
-    A workflow for generating V-O surfaces and running GC-DFT.
+    An ETL workflow for generating V-O surfaces and running GC-DFT to predict electrochemical properties.
     """
     bulk_ids=search_MaterialsAPI(["V-O"], ["V4+"])
     randomized_ids=randomize_bulk(bulk_ids, 2)
