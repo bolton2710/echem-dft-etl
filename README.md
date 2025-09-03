@@ -50,7 +50,7 @@ My work has shown the PZC and capacitance to be important descriptors for the ad
 [3](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.4c01457),
 [4](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.4c01032)\]
 
-## 2. Reproduce (set-up: 15 minutes; run: 1-2 hours)
+## 2. Reproduce (set-up: 20 minutes; run: 1-2 hours)
 
 *Requirement*: [Docker](https://docs.docker.com/get-started/get-docker/)
 
@@ -70,7 +70,7 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 ```
 docker compose up --build -d
 ```
-This builds the Docker images and composes the container at the same time, which took me about 10-15 minutes.
+This builds the Docker images and composes the container at the same time, which took me about 20-25 minutes.
 The build written in [Dockerfile](./Dockerfile) uses the Airflow base-image with adding the JDFTx compilation.
 The [docker-compose.yaml](./docker-compose.yaml) instructions follow Airflow's template, with addition of a second postgres (my_postgres) for saving the ETL output.
 
