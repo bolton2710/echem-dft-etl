@@ -1,10 +1,10 @@
 # Demo of ETL workflow for investigating electrochemical oxide materials
 
-## 1. Walkthrough (5 minutes read)
+## 1. Walkthrough (5-minutes read)
 
 ### A. Intro
-Electrodes are the building blocks for battery and electrocatalysis applications.
-Among electrode materials, oxides are commonly encountered in water electrolysis for green $H_2$ production (e.g., Iridium/Nickel oxides).
+Electrodes are the building block for battery and electrocatalysis applications.
+Among electrode materials, oxides are commonly encountered in water electrolysis for green $H_2$ production (e.g., iridium/nickel oxides).
 Because oxide materials are vast and electrochemical experiments are time-consuming,
 computational screening of oxide electrodes is among the cutting-edge ideas.
 This demo illustrates a workflow that screens vanadium oxides for electrochemical properties.
@@ -19,16 +19,16 @@ This workflow—broadly classified as Extract-Transform-Load (ETL)—comprises o
 6. Print report.
 
 [Apache-Airflow](https://airflow.apache.org/) is used for orchestrating the above ETL workflow.
-A DAG was created with the [TaskFlow API](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html).
+Airflow DAG was created with the [TaskFlow API](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html).
 
 ![Screenshot from Airflow GUI](./dag.png)
 
 For demo purposes:
-- Only vanadium (IV) oxides are searched for.
+- Only vanadium (IV) oxides are searched.
 - Only the (111) facet of 2 randomly picked bulk structures are generated.
-- Minimal DFT (inaccurate but fast) settings are used on 1 randomly picked surface.
-- A minimal toy postgres database using [psycopg](https://www.psycopg.org/docs/index.html) was implemented.
-- The report is just a simple figure with annotations and atomic structure, shown in Markdown.
+- Minimal DFT settings (inaccurate but fast) are used on 1 randomly picked surface.
+- A minimal postgres database using [psycopg](https://www.psycopg.org/docs/index.html) was implemented.
+- The report is a simple figure with annotations and atomic structure, printed on a Markdown file.
 
 ### C. Folder tour
 - The Airflow DAG is written in [/dags/my_dag.py](./dags/my_dag.py).
@@ -44,7 +44,7 @@ The excess charges versus potentials should yield a linear line, of which the sl
 
 ![Example of report](./output/visualize/mp-755394-111-3.png)
 
-My work showed the PZC and capacitance to be important descriptors for the adsorption thermodynamics and catalytic reaction kinetics.
+My work has shown the PZC and capacitance to be important descriptors for the adsorption thermodynamics and catalytic reaction kinetics.
 \[[1](https://www.nature.com/articles/s42004-025-01579-y),
 [2](https://pubs.rsc.org/en/content/articlehtml/2025/sc/d5sc03757c),
 [3](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.4c01457),
@@ -52,7 +52,7 @@ My work showed the PZC and capacitance to be important descriptors for the adsor
 
 ## 2. Reproduce (set-up: 15 minutes; run: 1-2 hours)
 
-*Requirements*: [Docker](https://docs.docker.com/get-started/get-docker/)
+*Requirement*: [Docker](https://docs.docker.com/get-started/get-docker/)
 
 1. Download this repository: 
 
@@ -60,7 +60,7 @@ My work showed the PZC and capacitance to be important descriptors for the adsor
 git clone https://github.com/bolton2710/echem-dft-etl.git
 ```
 
-2. Following this official [Airflow guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html),
+2. Following this official [Airflow-Docker guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html),
 initialize a unique Airflow ID: 
 ```
 echo -e "AIRFLOW_UID=$(id -u)" > .env
@@ -70,9 +70,9 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 ```
 docker compose up --build -d
 ```
-This build the Docker images and compose the container at the same time, took me about 5-10 minutes.
-The build written in [Dockerfile](./Dockerfile) use the Airflow-base image, and adding the JDFTx compilation.
-The [docker-compose](./docker-compose.yaml) instructions follow Airflow's template, with addition of a second postgres (my_postgres) for specific ETL purposes.
+This builds the Docker images and composes the container at the same time, which took me about 10-15 minutes.
+The build written in [Dockerfile](./Dockerfile) uses the Airflow base-image with adding the JDFTx compilation.
+The [docker-compose.yaml](./docker-compose.yaml) instructions follow Airflow's template, with addition of a second postgres (my_postgres) for saving the ETL output.
 
 4. Open `http://localhost:8080/` in your browser, where Airflow GUI and control reside.
 
